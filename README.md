@@ -1,5 +1,7 @@
 # Rust Rest API 0.1
 
+![](https://raw.githubusercontent.com/edersoncorbari/rust-rest-api/main/doc/boxer.png)
+
 ## A simple Rest API using Rust + PostgreSQL
 
 This is a fictional project for laboratory studies using the **Rust** dialect.
