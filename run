@@ -2,7 +2,6 @@
 
 export DATABASE_URL='postgres://postgres:postgres@localhost:5432/postgres'
 
-cargo build --release
-
-./target/release/rust-rest-api
+cargo build --release && cargo run && exit
+# ./target/release/rust-rest-api
 
