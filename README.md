@@ -1,3 +1,8 @@
+# Rust Rest API 0.1
+
+## A simple Rest API using Rust + PostgreSQL
+
+This is a fictional project for laboratory studies using the **Rust** dialect.
 
 
 docker pull postgres
