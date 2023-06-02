@@ -82,7 +82,8 @@ $ curl -i -H "Content-Type: application/json" -X \
 #### 4.2 📝 Checking created user with ID 
 
 ```sh
-$ curl -i -H "Content-Type: application/json" -X GET http://127.0.0.1:8080/users/1
+$ curl -i -H "Content-Type: application/json" -X \
+  GET http://127.0.0.1:8080/users/1
 ```
 
 **The answer should be:**
@@ -92,7 +93,8 @@ $ curl -i -H "Content-Type: application/json" -X GET http://127.0.0.1:8080/users
 #### 4.3 📝 Updating user data 
 
 ```sh
-$ curl -i -H "Content-Type: application/json" -X PUT http://127.0.0.1:8080/users/1 -d '{"name":"User0", "email":"u0@xxx0.com"}' 
+$ curl -i -H "Content-Type: application/json" -X \
+  PUT http://127.0.0.1:8080/users/1 -d '{"name":"User0", "email":"u0@xxx0.com"}' 
 ```
 
 **The answer should be:**
@@ -102,7 +104,8 @@ $ curl -i -H "Content-Type: application/json" -X PUT http://127.0.0.1:8080/users
 #### 4.4 📝 Checking all registered users 
 
 ```sh
-$ curl -i -H "Content-Type: application/json" -X GET http://127.0.0.1:8080/users
+$ curl -i -H "Content-Type: application/json" -X \
+  GET http://127.0.0.1:8080/users
 ```
 
 **The answer should be:**
@@ -112,8 +115,10 @@ $ curl -i -H "Content-Type: application/json" -X GET http://127.0.0.1:8080/users
 #### 4.5 📝 Deleting a user with ID
 
 ```sh
-$ curl -i -H "Content-Type: application/json" -X DELETE http://127.0.0.1:8080/users/1
-$ curl -i -H "Content-Type: application/json" -X DELETE http://127.0.0.1:8080/users/2
+$ curl -i -H "Content-Type: application/json" -X \
+  DELETE http://127.0.0.1:8080/users/1
+$ curl -i -H "Content-Type: application/json" -X \
+  DELETE http://127.0.0.1:8080/users/2
 ```
 
 **The answer should be:**
