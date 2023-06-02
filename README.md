@@ -69,8 +69,10 @@ or test via command line with **curl**.
 #### 4.1 📝 Creating a user
 
 ```sh
-$ curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:8080/users -d '{"name":"User1", "email":"u1@xxx1.com"}'
-$ curl -i -H "Content-Type: application/json" -X POST http://127.0.0.1:8080/users -d '{"name":"User2", "email":"u2@xxx2.com"}'
+$ curl -i -H "Content-Type: application/json" -X \
+  POST http://127.0.0.1:8080/users -d '{"name":"User1", "email":"u1@xxx1.com"}'
+$ curl -i -H "Content-Type: application/json" -X \
+  POST http://127.0.0.1:8080/users -d '{"name":"User2", "email":"u2@xxx2.com"}'
 ```
 
 **The answer should be:**
