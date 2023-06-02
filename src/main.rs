@@ -60,7 +60,7 @@ fn handle_client(mut stream: TcpStream) {
             let (status_line, content) = match &*request {
                 r if r.starts_with("POST /users") => handle_post_request(r),
                 r if r.starts_with("GET /users/") => handle_get_request(r),
-                r if r.starts_with("GET /users") => handle_get_all_request(),
+                r if r.starts_with("GET /users") => handle_get_all_request(r),
                 r if r.starts_with("PUT /users/") => handle_put_request(r),
                 r if r.starts_with("DELETE /users/") => handle_delete_request(r),
                 _ => (NOT_FOUND.to_string(), "404 Not Found".to_string()),
@@ -125,7 +125,7 @@ fn handle_get_request(request: &str) -> (String, String) {
 }
 
 // List all users
-fn handle_get_all_request() -> (String, String) {
+fn handle_get_all_request(_request: &str) -> (String, String) {
     match Client::connect(DB_URL, NoTls) {
         Ok(mut client) => {
             let mut users = Vec::new();
@@ -217,7 +217,7 @@ fn get_id(request: &str) -> &str {
         .unwrap_or_default()
 }
 
-// Deserialize user from request body with the id
+// Deserialize user from request body with the ID
 fn get_user_request_body(request: &str) -> Result<User, serde_json::Error> {
     serde_json::from_str(request.split("\r\n\r\n").last().unwrap_or_default())
 }
