@@ -1,4 +1,4 @@
-<img src="https://www.freecodecamp.org/news/content/images/2021/01/rust-mascot.png" align="right" width="100" height="67"/>
+<img src="https://raw.githubusercontent.com/edersoncorbari/rust-rest-api/main/doc/rust-mascot.png" align="right" width="100" height="67"/>
 
 # Rust Rest API 0.1
 
