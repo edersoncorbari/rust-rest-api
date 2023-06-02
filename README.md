@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/edersoncorbari/rust-rest-api/main/doc/rust-mascot.png" align="right" width="100" height="67"/>
 
-# Rust Rest API 0.1
+# Rust Rest API v0.1
 
 ![](https://raw.githubusercontent.com/edersoncorbari/rust-rest-api/main/doc/boxer.png)
 
