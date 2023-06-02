@@ -21,7 +21,9 @@ $ docker pull postgres
 Then just run the container changing the parameters if necessary:
 
 ```sh
-$ docker run -p 5432:5432 -v /tmp/db:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres -d postgres
+$ docker run -p 5432:5432 -v \
+  /tmp/db:/var/lib/postgresql/data -e \
+  POSTGRES_PASSWORD=postgres -d postgres
 ```
 
 **Important**, define the database connection variable.
