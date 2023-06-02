@@ -8,7 +8,8 @@
 
 This is a fictional project for laboratory studies using the **Rust** dialect.
 
-The project is a Rest API that makes a CRUD of users in a PostgreSQL database, No web framework is used and also does not use ORM.
+The project is a **Rest API** that makes a **CRUD** of users in a PostgreSQL database. *No web framework is 
+used and also does not use ORM*.
 
 ### 1 Docker with PostgreSQL 📦
 
