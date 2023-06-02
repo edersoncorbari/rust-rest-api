@@ -12,7 +12,7 @@ The project is a Rest API that makes a CRUD of users in a PostgreSQL database, N
 
 ### 1 Docker with PostgreSQL 📦
 
-Install PostgreSQL docker, I used the latest version. Run the command:
+Install docker, I used the latest version. Run the command:
 
 ```sh
 $ docker pull postgres
