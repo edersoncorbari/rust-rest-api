@@ -41,15 +41,18 @@ $ cargo build --release
 This will build the app in release mode. After running the project:
 
 ```sh
-$ cargo build --release
-```
-
-Now, run the project:
-
-```sh
 $ cargo run
 ```
 
 > Note: You can also use the shell script by calling "./run" to build and run the application.
+
+### 3 Endpoints
+
+To test the endpoints, you can use **Postman**, the collections are in the (XX) folder. Or test via command line with **curl**.
+
+```sh
+$ curl -i -H "Content-Type: application/json" -X GET http://127.0.0.1:8080/users
+```
+
 
 
