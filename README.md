@@ -6,7 +6,7 @@
 
 ## A simple Rest API using Rust + PostgreSQL
 
-This is a fictional project for laboratory studies using the **Rust** dialect.
+This is a fictional project for laboratory studies using the **Rust** :crab: dialect.
 
 The project is a **Rest API** that makes a **CRUD** of users in a PostgreSQL database. *No web framework is 
 used and also does not use ORM*.
@@ -35,7 +35,7 @@ $ export DATABASE_URL=postgres://postgres:postgres@localhost:5432/postgres
 
 ### 2 Running the Project 🔥
 
-I'm assuming you already have **Rust** and **ToolChain** installed on your workstation. 
+I'm assuming you already have **Rust** :crab: and **ToolChain** installed on your workstation. 
 
 So, just enter the root of the project and run the command:
 
