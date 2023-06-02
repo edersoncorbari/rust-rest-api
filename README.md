@@ -6,9 +6,50 @@
 
 This is a fictional project for laboratory studies using the **Rust** dialect.
 
+The project is a Rest API that makes a CRUD of users in a PostgreSQL database, No web framework is used and also does not use ORM.
 
-docker pull postgres
-docker run -p 5432:5432 -v /tmp/db:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres -d postgres
-export DATABASE_URL=postgres://postgres:postgres@localhost:5432/postgres
+### 1 Docker with PostgreSQL
 
-version = "0.1.0"
+Install PostgreSQL docker, I used the latest version. Run the command:
+
+```sh
+$ docker pull postgres
+```
+
+Then just run the container changing the parameters if necessary:
+
+```sh
+$ docker run -p 5432:5432 -v /tmp/db:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres -d postgres
+```
+
+**Important**, define the database connection variable.
+
+```sh
+$ export DATABASE_URL=postgres://postgres:postgres@localhost:5432/postgres
+```
+
+### 2 Running the Project
+
+I'm assuming you already have **Rust** and **ToolChain** installed on your workstation. 
+
+So, just enter the root of the project and run the command:
+
+```sh
+$ cargo build --release
+```
+
+This will build the app in release mode. After running the project:
+
+```sh
+$ cargo build --release
+```
+
+Now, run the project:
+
+```sh
+$ cargo run
+```
+
+> Note: You can also use the shell script by calling "./run" to build and run the application.
+
+
