@@ -21,13 +21,15 @@ used and also does not use ORM*. The data is stored in the public db schema prec
 
 ### 2. 🏃 Running the application with Docker
 
-The application and the database are dockerrized, in the root folder of the project just run the **bash** command:
+The application and the database are dockerrized :whale:, in the root folder of the project just run the **bash** command:
 
 ```sh
 docker-compose up -d --build
 ```
 
 ### 3. 🏗️  Build project manualy
+
+:radioactive: Run the commands only if you want to build the project manually. Otherwise, If not, skip to step 4 :radioactive:
 
 I'm assuming you already have **Rust** and **ToolChain** installed on your workstation.
 
