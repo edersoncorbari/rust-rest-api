@@ -21,7 +21,7 @@ used and also does not use ORM*. The data is stored in the public db schema prec
 
 ### 2. 🏃 Running the application with Docker
 
-The application and the database are dockerrized, just run the command:
+The application and the database are dockerrized, in the root folder of the project just run the command:
 
 ```sh
 $ docker-compose up -d --build
