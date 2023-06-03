@@ -112,7 +112,7 @@ curl -i -H "Content-Type: application/json" -X \
 
 **The answer should be:**
 
-> [{"id":1,"name":"User0","email":"u0@xxx0.com"},{"id":2,"name":"User2","email":"u2@xxx2.com"}]
+> [{"id":2,"name":"User2","email":"u2@xxx2.com"},{"id":1,"name":"User0","email":"u0@xxx0.com"}]
 
 #### 4.5 📝 Deleting a user with ID
 
