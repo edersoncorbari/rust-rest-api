@@ -127,10 +127,10 @@ $ curl -i -H "Content-Type: application/json" -X \
 
 ### 4. :heavy_multiplication_x: Stop docker
 
-Stop and remove containers, networks used in this project:
+Stop and remove containers, networks, volumes used in this project:
 
 ```sh
-$ docker-compose down
+$ docker-compose down --volumes
 ```
 
 **Enjoy** :tropical_drink:
