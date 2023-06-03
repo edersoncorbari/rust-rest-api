@@ -21,7 +21,7 @@ used and also does not use ORM*. The data is stored in the public db schema prec
 
 ### 2. 🏃 Running the application with Docker
 
-The application and the database are dockerrized, in the root folder of the project just run the command:
+The application and the database are dockerrized, in the root folder of the project just run the **bash** command:
 
 ```sh
 docker-compose up -d --build
@@ -37,7 +37,7 @@ I'm assuming you already have **Rust** and **ToolChain** installed on your works
 export DATABASE_URL=postgres://postgres:postgres@localhost:5432/postgres
 ```
 
-So, just enter the root of the project and run the command:
+So, just enter the root of the project and run the bash command:
 
 ```sh
 cargo build --release
