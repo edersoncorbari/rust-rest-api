@@ -29,7 +29,7 @@ docker-compose up -d --build
 
 ### 3. 🏗️  Build project manualy
 
-:radioactive: Run the commands only if you want to build the project manually. Otherwise, If not, skip to step 4 :radioactive:
+:radioactive: Run the commands only if you want to build the project manually. If not, skip to next step! :radioactive:
 
 I'm assuming you already have **Rust** and **ToolChain** installed on your workstation.
 
