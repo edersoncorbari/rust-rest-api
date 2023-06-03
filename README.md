@@ -24,7 +24,7 @@ used and also does not use ORM*. The data is stored in the public db schema prec
 The application and the database are dockerrized, in the root folder of the project just run the command:
 
 ```sh
-$ docker-compose up -d --build
+docker-compose up -d --build
 ```
 
 ### 3. 🏗️  Build project manualy
@@ -34,19 +34,19 @@ I'm assuming you already have **Rust** and **ToolChain** installed on your works
 > Note: Difine the database connection variable:
 
 ```sh
-$ export DATABASE_URL=postgres://postgres:postgres@localhost:5432/postgres
+export DATABASE_URL=postgres://postgres:postgres@localhost:5432/postgres
 ```
 
 So, just enter the root of the project and run the command:
 
 ```sh
-$ cargo build --release
+cargo build --release
 ```
 
 This will build the app in release mode. After running the project:
 
 ```sh
-$ cargo run
+cargo run
 ```
 
 > Note: You can also use the shell script by calling "**./run**" to build and run the application.
@@ -69,9 +69,9 @@ or test via command line with **curl**.
 #### 4.1 📝 Creating a user
 
 ```sh
-$ curl -i -H "Content-Type: application/json" -X \
+curl -i -H "Content-Type: application/json" -X \
   POST http://127.0.0.1:8080/users -d '{"name":"User1", "email":"u1@xxx1.com"}'
-$ curl -i -H "Content-Type: application/json" -X \
+curl -i -H "Content-Type: application/json" -X \
   POST http://127.0.0.1:8080/users -d '{"name":"User2", "email":"u2@xxx2.com"}'
 ```
 
@@ -82,7 +82,7 @@ $ curl -i -H "Content-Type: application/json" -X \
 #### 4.2 📝 Checking created user with ID 
 
 ```sh
-$ curl -i -H "Content-Type: application/json" -X \
+curl -i -H "Content-Type: application/json" -X \
   GET http://127.0.0.1:8080/users/1
 ```
 
@@ -93,7 +93,7 @@ $ curl -i -H "Content-Type: application/json" -X \
 #### 4.3 📝 Updating user data 
 
 ```sh
-$ curl -i -H "Content-Type: application/json" -X \
+curl -i -H "Content-Type: application/json" -X \
   PUT http://127.0.0.1:8080/users/1 -d '{"name":"User0", "email":"u0@xxx0.com"}' 
 ```
 
@@ -104,7 +104,7 @@ $ curl -i -H "Content-Type: application/json" -X \
 #### 4.4 📝 Checking all registered users 
 
 ```sh
-$ curl -i -H "Content-Type: application/json" -X \
+curl -i -H "Content-Type: application/json" -X \
   GET http://127.0.0.1:8080/users
 ```
 
@@ -115,9 +115,9 @@ $ curl -i -H "Content-Type: application/json" -X \
 #### 4.5 📝 Deleting a user with ID
 
 ```sh
-$ curl -i -H "Content-Type: application/json" -X \
+curl -i -H "Content-Type: application/json" -X \
   DELETE http://127.0.0.1:8080/users/1
-$ curl -i -H "Content-Type: application/json" -X \
+curl -i -H "Content-Type: application/json" -X \
   DELETE http://127.0.0.1:8080/users/2
 ```
 
@@ -130,7 +130,7 @@ $ curl -i -H "Content-Type: application/json" -X \
 Stop and remove containers, networks, volumes used in this project:
 
 ```sh
-$ docker-compose down --volumes
+docker-compose down --volumes
 ```
 
 **Enjoy** :tropical_drink:
